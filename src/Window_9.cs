@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
 
 namespace Medic
 {
@@ -372,7 +366,10 @@ namespace Medic
                         sb.Append("\\ql \\fs28 Ацетабулярный коэффициент АК равен " + FormatFloat(AK) + "\\par Показана остеотомия таза.\\par");
                         sb.Append("\\ql \\fs28 Степень латерального наклона ацетабулярного фрагмента равна " + FormatFloat(SLN) + "\\par");
                         sb.Append("\\ql \\fs28 Степень переднего наклона ацетабулярного фрагмента равна " + FormatFloat(SPN) + "\\par");
-                        if (angle_V > 20)
+                        if (angle_V >= 10 && angle_V <= 20)
+                        {
+                        }
+                        else if (angle_V > 20)
                         {
                             sb.Append("\\ql \\fs28 А Наружная ротация ацетабулярного фрагмента НР равна " + FormatFloat(HP) + "\\par");
                         }
@@ -581,7 +578,10 @@ namespace Medic
                         sb.Append("\\ql \\fs28 Ацетабулярный коэффициент АК равен " + FormatFloat(AK) + "\\par Показана остеотомия таза (лонно-подвздошная остеотомия при сохранении ЛСС). \\par");
                         sb.Append("\\ql \\fs28 Степень латерального наклона ацетабулярного фрагмента равна " + FormatFloat(SLN) + "\\par");
                         sb.Append("\\ql \\fs28 Степень переднего наклона ацетабулярного фрагмента равна " + FormatFloat(SPN) + "\\par");
-                        if (angle_V > 20)
+                        if (angle_V >= 10 && angle_V <= 20)
+                        {
+                        }
+                        else if (angle_V > 20)
                         {
                             sb.Append("\\ql \\fs28 А Наружная ротация ацетабулярного фрагмента НР равна " + FormatFloat(HP) + "\\par");
                         }

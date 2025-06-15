@@ -4,11 +4,13 @@ namespace Medic
 {
     public static class SharedData
     {
-        // Статическое свойство для хранения Bitmap
+        // Поля для хранения загруженных пользователем рентгенограмм
         public static Bitmap Radiograph_1 { get; set; }
         public static Bitmap Radiograph_2 { get; set; }
         public static Bitmap Radiograph_3 { get; set; }
         public static Bitmap Radiograph_4 { get; set; }
+
+        // Поля для хранения всех даннных, учавствующих при вынесении вердикта
 
         public static double Dh;
         public static double Da;
@@ -39,7 +41,7 @@ namespace Medic
         public static int year;
         public static int age;
 
-        // Метод для освобождения ресурсов, когда изображение больше не нужно
+        // Методы для освобождения ресурсов, когда изображение больше не нужно
         // (например, при закрытии приложения)
         public static void DisposeSharedPic1()
         {

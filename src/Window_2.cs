@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Medic
@@ -60,11 +54,6 @@ namespace Medic
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_next_2_Click(object sender, EventArgs e)
         {
             if (textBox_2_3_Okano.Text == "")
@@ -90,11 +79,6 @@ namespace Medic
                       MessageBoxIcon.Error);
                 }
             }
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_switch_2_1_Click(object sender, EventArgs e)
@@ -142,11 +126,6 @@ namespace Medic
                 // Перерисовка PictureBox
                 pictureBox2.Invalidate();
             }
-        }
-
-        private void textBox_2_1_Dist_A_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void PictureBox2_MouseDown(object sender, MouseEventArgs e)
@@ -357,11 +336,6 @@ namespace Medic
                 textBox_2_3_Okano.Text = Convert.ToString((float)(SharedData.Dist_A / SharedData.Dist_B) * 100) + "%";
                 SharedData.Okano = (SharedData.Dist_A / SharedData.Dist_B) * 100;
             }
-        }
-
-        private void textBox_2_3_Okano_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

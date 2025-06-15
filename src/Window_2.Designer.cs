@@ -60,7 +60,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Определение индекса Окано";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_next_2
             // 
@@ -83,7 +82,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // btn_help_2
             // 
@@ -197,7 +195,6 @@
             this.textBox_2_1_Dist_A.ReadOnly = true;
             this.textBox_2_1_Dist_A.Size = new System.Drawing.Size(100, 22);
             this.textBox_2_1_Dist_A.TabIndex = 6;
-            this.textBox_2_1_Dist_A.TextChanged += new System.EventHandler(this.textBox_2_1_Dist_A_TextChanged);
             // 
             // textBox_2_2_Dist_B
             // 
@@ -214,7 +211,6 @@
             this.textBox_2_3_Okano.ReadOnly = true;
             this.textBox_2_3_Okano.Size = new System.Drawing.Size(100, 22);
             this.textBox_2_3_Okano.TabIndex = 8;
-            this.textBox_2_3_Okano.TextChanged += new System.EventHandler(this.textBox_2_3_Okano_TextChanged);
             // 
             // label_2_5
             // 

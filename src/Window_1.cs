@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Medic
@@ -93,11 +87,6 @@ namespace Medic
 
         }
 
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
-
         private void btn_select_1_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
@@ -132,10 +121,6 @@ namespace Medic
             {
                 pictureBox1.Image = SharedData.Radiograph_1;
             }
-            else
-            {
-
-            }
         }
 
         private void btn_switch_2_Click(object sender, EventArgs e)
@@ -159,11 +144,6 @@ namespace Medic
         private void btn_help_1_Click(object sender, EventArgs e)
         {
             label_1_3.Visible = !label_1_3.Visible;
-        }
-
-        private void label_1_3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_measure_1_1_Click(object sender, EventArgs e)
@@ -202,11 +182,6 @@ namespace Medic
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
             }
-
-        }
-
-        private void textBox_1_1_Dh_TextChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -509,16 +484,6 @@ namespace Medic
             }
         }
 
-        private void textBox_1_2_R_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_measure_1_3_Click(object sender, EventArgs e)
         {
             if (textBox_1_1_Dh.Text == "" || textBox_1_2_R.Text == "")
@@ -532,8 +497,8 @@ namespace Medic
             {
                 SharedData.Dh = Convert.ToDouble(textBox_1_1_Dh.Text);
                 SharedData.R = Convert.ToDouble(textBox_1_2_R.Text);
-                textBox_1_3_ISh.Text = Convert.ToString((float)(SharedData.Dh / (SharedData.R * 0.5)));
                 SharedData.ISh = (SharedData.Dh / (SharedData.R * 0.5));
+                textBox_1_3_ISh.Text = Convert.ToString((float)SharedData.ISh);
             }
         }
     }

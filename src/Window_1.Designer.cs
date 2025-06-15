@@ -85,11 +85,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+
             // 
             // btn_select_1
             // 
@@ -161,7 +157,6 @@
             this.label_1_3.Text = "Индекс сферичности головки (ISh) - отношение диаметра окружности, соответствующей" +
     " форме головки (Dh) к половине расстояния между фигурами слезы (R).";
             this.label_1_3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label_1_3.Click += new System.EventHandler(this.label_1_3_Click);
             // 
             // label_1_4
             // 
@@ -192,7 +187,6 @@
             this.textBox_1_2_R.ReadOnly = true;
             this.textBox_1_2_R.Size = new System.Drawing.Size(102, 22);
             this.textBox_1_2_R.TabIndex = 7;
-            this.textBox_1_2_R.TextChanged += new System.EventHandler(this.textBox_1_1_Dh_TextChanged);
             // 
             // label1
             // 
@@ -213,7 +207,6 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "R =";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox_1_1_Dh
             // 
@@ -222,7 +215,6 @@
             this.textBox_1_1_Dh.ReadOnly = true;
             this.textBox_1_1_Dh.Size = new System.Drawing.Size(102, 22);
             this.textBox_1_1_Dh.TabIndex = 7;
-            this.textBox_1_1_Dh.TextChanged += new System.EventHandler(this.textBox_1_2_R_TextChanged);
             // 
             // btn_measure_1_2
             // 
